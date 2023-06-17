@@ -72,10 +72,36 @@ object questions {
     println("Take home salary for week: Rs. " + take_home_salary_per_week)
 
   }
+
+  private def highest_profit_cal(): Int = {
+    val performance_cost = 500
+    val attendee_cost = 3
+
+    var ticket_price = 5
+    var number_of_attendance = 160
+
+    var profit_temp1 = (ticket_price * number_of_attendance) - performance_cost - (attendee_cost * number_of_attendance)
+    ticket_price += 5
+    number_of_attendance -= 20
+    var profit_temp2 = (ticket_price * number_of_attendance) - performance_cost - (attendee_cost * number_of_attendance)
+
+
+    while (profit_temp2 > profit_temp1) {
+      println(profit_temp1)
+      profit_temp1 = profit_temp2
+      ticket_price += 5
+      number_of_attendance -= 20
+      profit_temp2 = (ticket_price * number_of_attendance) - performance_cost - (attendee_cost * number_of_attendance)
+    }
+
+    profit_temp1
+  }
+
+
   def main(args: Array[String]): Unit = {
     question01()
     question02()
     question03()
-
+    println("\nHighest Profit: " + highest_profit_cal())
   }
 }
