@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ad0299-9bb1-4e05-b4c7-9525ae3599c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Scala-Projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Scala-Projects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/21001032 - Tutorial 02.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/src/main/scala/questions/questions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/scala/questions/questions.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +29,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -37,6 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687187364299</updated>
       <workItem from="1687187365488" duration="98000" />
+      <workItem from="1687187614668" duration="53000" />
     </task>
     <servers />
   </component>
