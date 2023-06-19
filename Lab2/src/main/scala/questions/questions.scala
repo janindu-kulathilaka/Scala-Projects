@@ -102,6 +102,7 @@ object questions {
     question01()
     question02()
     question03()
-    println("\nHighest Profit: " + highest_profit_cal())
+
+    println("\nQuestion 04\nHighest Profit: " + highest_profit_cal())
   }
 }
