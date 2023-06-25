@@ -12,7 +12,8 @@ object questions {
     val qc = n % j
     val qd = m / j * j
     val qe = f + 10 * 5 + g
-    val qf = (+(+i)) * n
+    i += 1
+    val qf = i * n
 
     println("Question 01")
 
