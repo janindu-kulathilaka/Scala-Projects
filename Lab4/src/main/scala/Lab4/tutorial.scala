@@ -39,7 +39,24 @@ object tutorial {
       }
     }
   }
-  
+
+  //Question 03
+
+  def toUpper(name : String): String = {
+    val strUpper = name.toUpperCase
+
+    strUpper
+  }
+
+  def toLower(name : String): String = {
+    val strLower = name.toLowerCase
+
+    strLower
+  }
+
+  def formatNames(name : String, formatter: String => String ) : String = {
+    formatter(name)
+  }
 
   def main(args: Array[String]): Unit = {
 
@@ -60,6 +77,22 @@ object tutorial {
     patternMatching(0)
     patternMatching(4)
     patternMatching(7)
+
+    println()
+
+
+    //Question 03
+    val names = List("Benny", "Niroshan", "Saman", "Kumara")
+
+    for (name <- names){
+      val upperCaseName = formatNames(name, toUpper)
+      val lowerCaseName = formatNames(name, toLower)
+
+      println(upperCaseName)
+      println(lowerCaseName)
+
+      println()
+    }
 
   }
 
