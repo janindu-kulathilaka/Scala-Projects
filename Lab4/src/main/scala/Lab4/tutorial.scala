@@ -3,6 +3,9 @@ package Lab4
 object tutorial {
 
   // Question 01
+  // In this part i get parameter integer parameter
+  // after that if else statements filter them out first one if less than or equal to 20,000 interest presentage 2% and less than or equal to 200,000 interest precentage 4% and so on.
+  // after that presentage will multiply with the deposit amount and return the yearly interest
   def calacInterest(deposit : Int): Double = {
       if (deposit <= 20000) {
         val interestPresentage = 0.02
@@ -26,6 +29,8 @@ object tutorial {
   }
 
   // Question 02
+  // first as input getting int parameter and using if statement check number is less than or equal to 0 if it is return "Negative/Zero"
+  // if it is not then check balance when divide that number by 2 if it is 0 then return "EVEN Number" if it is 1 then return "ODD Number"
   def patternMatching(number: Int): Unit = {
     if (number <= 0) {
       println("Negative/Zero")
@@ -42,6 +47,9 @@ object tutorial {
 
   //Question 03
 
+  //in first funtion getting string parameter and using toUpperCase pre defined function get upper case letters for input and return the output
+  //in second function same theory using toLowerCase return output
+  //in third funciton getting two parameters. first one is normal string parameter and second one is functional parameter it will get the input data as a function
   def toUpper(name : String): String = {
     val strUpper = name.toUpperCase
 
