@@ -29,6 +29,9 @@ object lab4 {
 
 
   //Question 02
+  // if i less than n then it will check i is prime number or not
+  // if it is prime number it will print
+  // and call i+1 recursively
   def primeSeq(n: Int, i: Int = 2): Unit = {
 
     if (i < n) {
@@ -41,6 +44,8 @@ object lab4 {
 
   }
 
+  //this code will run recursively until n=0 then return o and then come
+  // backward and 0 + 1 , 1 + 2 and until n-1 + n
   //Question 03
   def sum(n: Int): Int = {
     if (n <= 0)
@@ -50,16 +55,18 @@ object lab4 {
   }
 
 
+  //
   //Question 04
-
   def isEvenOrOdd(n: Int): Unit = {
     if (n == 0)
       println("even") //even
     else if (n == 1)
       println("odd") //odd
-    else if (n < 0)
+    else if (n < 0) {
       isEvenOrOdd(-n)
-    else
+      // i add this function because if we add negative number
+      // this will run without stopping
+    } else
       isEvenOrOdd(n-2)
   }
 
@@ -84,8 +91,12 @@ object lab4 {
       List(0, 1)
     } else {
       val fibonacciList = printFibonacci(n - 1)
+      // this respresent the until fibonacci numbers until n-1
       val nextNumber = fibonacciList(n - 2) + fibonacciList(n - 3)
+      // then this line represent n-1 fibonacci number
       fibonacciList :+ nextNumber
+      //n-1 fibonacci number using this line added to the list of
+      // fibonacci numbers until n-1
     }
   }
 
