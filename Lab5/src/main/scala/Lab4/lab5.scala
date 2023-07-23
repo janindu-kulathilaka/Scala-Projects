@@ -4,14 +4,6 @@ object lab4 {
 
   //Question 01
   def prime(n: Int): Boolean = {
-    //in here getting two integer parameters one is main number and decrement number
-    //this recursive function will run until one of the condition proven
-    //and it will return true or false
-    //if it returns true it means main number can divided from another number
-    //other that 1 or it's own
-    //then it's not a prime number then return false from main funtion
-    //if isDivisible function return false it is prime number then return true to
-    //main function
     def isDivisible(mainNumber: Int, decrementNumber: Int): Boolean = {
       if (decrementNumber == 1)
         false
@@ -29,9 +21,6 @@ object lab4 {
 
 
   //Question 02
-  // if i less than n then it will check i is prime number or not
-  // if it is prime number it will print
-  // and call i+1 recursively
   def primeSeq(n: Int, i: Int = 2): Unit = {
 
     if (i < n) {
@@ -44,8 +33,6 @@ object lab4 {
 
   }
 
-  //this code will run recursively until n=0 then return o and then come
-  // backward and 0 + 1 , 1 + 2 and until n-1 + n
   //Question 03
   def sum(n: Int): Int = {
     if (n <= 0)
@@ -64,8 +51,6 @@ object lab4 {
       println("odd") //odd
     else if (n < 0) {
       isEvenOrOdd(-n)
-      // i add this function because if we add negative number
-      // this will run without stopping
     } else
       isEvenOrOdd(n-2)
   }
@@ -91,12 +76,8 @@ object lab4 {
       List(0, 1)
     } else {
       val fibonacciList = printFibonacci(n - 1)
-      // this respresent the until fibonacci numbers until n-1
       val nextNumber = fibonacciList(n - 2) + fibonacciList(n - 3)
-      // then this line represent n-1 fibonacci number
       fibonacciList :+ nextNumber
-      //n-1 fibonacci number using this line added to the list of
-      // fibonacci numbers until n-1
     }
   }
 
