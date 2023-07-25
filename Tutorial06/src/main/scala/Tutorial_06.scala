@@ -1,6 +1,7 @@
 object Tutorial_06 {
 
   def Encryption(string: String, shift: Int): String = {
+    // first nameString 
     var newString = ""
 
     for (i <- 1 to string.length) {
