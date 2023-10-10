@@ -1,7 +1,7 @@
 //object question {
 //  def sumofOddNumbers(arr: List[Int]): Int = {
 //    val oddNumbers = arr.filter(x => x % 2 != 0)
-//    val sum = oddNumbers.reduce((x,y) => x +y)
+//    val sum = oddNumbers.reduce((x,y) => x + y)
 //    sum
 //  }
 //
@@ -26,15 +26,24 @@
 //  }
 //}
 
-object questionc {
-  def absoluteValue(arr: List[Int]): List[Int] = {
-    val absoluteValue = arr.map(x => x.abs)
-    absoluteValue
-  }
+// object questionc {
+//   def absoluteValue(arr: List[Int]): List[Int] = {
+//     val absoluteValue = arr.map(x => x.abs)
+//     absoluteValue
+//   }
 
-  def main(args: Array[String]): Unit = {
-    val arr = List(2, -4, 3, -1, 23, -4, -54)
-    println(absoluteValue(arr))
-  }
+//   def main(args: Array[String]): Unit = {
+//     val arr = List(2, -4, 3, -1, 23, -4, -54)
+//     println(absoluteValue(arr))
+//   }
+// }
+
+
+def sumofOddNumbers(arr: List[Int]): Int = {
+  arr.filter(_%2!=0).reduce(_+_)
 }
 
+def main(args: Array[String]): Unit = {
+  val arr = List(1,2,3,4,5,6,7,8,9,10)
+  println(sumofOddNumbers(arr))
+}
